@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+
+}
+header {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+
+.lightsBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1rem;
+
+}
+
+.bulb {
+    width: 1rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 5px;
+    display: inline-block;
+}
+
+.bulb:nth-child(even) {
+    margin-top: 1rem;
+}
+
+.bulb:nth-child(odd){
+    margin-top: 0rem;
+}
+
+.bulb.on {
+    box-shadow: 0 0 10px 5px currentColor;
+}
+
+.controlButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.controlButtons button {
+    background-color: aquamarine;
+    width: 10rem;
+    height: 3rem;
+    color: blue;
+
+}
